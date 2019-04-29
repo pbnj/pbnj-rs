@@ -1,0 +1,12 @@
+[package]
+name = "pbnj"
+version = "0.0.1"
+authors = ["Peter Benjamin <petermbenjamin@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+prettytable-rs = "0.8"
+toml = "0.5"
+serde = "1.0.90"
+serde_derive = "1.0.90"
