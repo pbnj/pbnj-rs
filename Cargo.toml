@@ -4,6 +4,14 @@ version = "0.0.1"
 authors = ["Peter Benjamin <petermbenjamin@gmail.com>"]
 edition = "2018"
 
+[lib]
+name = "libpb"
+path = "src/lib/libpb.rs"
+
+[[bin]]
+name = "pbnj"
+path = "src/bin/main.rs"
+
 [dependencies]
 clap = "2.33"
 prettytable-rs = "0.8"

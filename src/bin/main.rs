@@ -4,8 +4,7 @@ extern crate toml;
 #[macro_use]
 extern crate serde_derive;
 
-use clap::App;
-// use serde::{Deserialize, Serialize};
+use clap::{App, Arg};
 use std::fs::File;
 use std::io;
 use std::io::prelude::*;
@@ -31,6 +30,11 @@ fn main() -> io::Result<()> {
         .version(config.package.version.as_str())
         .author("Peter Benjamin <https://pbnj.dev>")
         .about("A CLI to help you get in touch with me")
+        .arg(
+            Arg::with_name("linkedin")
+                .long("linkedin")
+                .short("linkedin"),
+        )
         .get_matches();
 
     Ok(())
